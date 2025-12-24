@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 NotFound</title>
+    <link rel="stylesheet" href="https://sakitibi.github.io/static.asakurawiki.com/css/404.min.static.css"/>
+</head>
+<body>
+    <main style="padding: 2rem;text-align:center;font-family:sans-serif">
+        <div class="article text-center">
+            <h1>404 Not Found</h1>
+            <p>お探しのページ</p>
+            <p>(<span id="pathname"></span>)は存在しません。</p>
+        </div>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.getElementById("pathname").innerText = window.location.pathname;
+        });
+    </script>
+</body>
+</html>
